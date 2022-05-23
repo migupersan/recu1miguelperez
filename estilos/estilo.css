@@ -1,0 +1,290 @@
+/************************ estilo general ********************/
+
+@font-face {
+     font-family: mili;
+     src: url('../fuentes/solid-soldier/gomarice_solid_soldier.ttf');
+}
+
+@font-face {
+     font-family: texto;
+     src: url('../fuentes/alte-haas-grotesk/AlteHaasGroteskRegular.ttf');
+}
+
+body{background-color:black;
+     margin:0;
+     padding:0;}
+
+#container{
+           width:80%;
+           margin:auto; }
+
+html { scroll-behavior: smooth;}
+
+h1 {letter-spacing: 0.2em;}
+
+/************************ estilo para nav ***************************/
+
+nav {position: sticky;   
+     top:0;
+     z-index:99;
+     opacity:0.7;
+     
+    }
+
+.topnav {
+     overflow: hidden;
+     background-color: #333;
+     font-family: mili;
+     
+   }
+   
+   .topnav a {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 1.5em;
+   }
+   
+   .topnav a:hover {
+     background-color: #657D42;
+     color: black;
+   }
+   
+   .topnav .icon {
+     display: none;
+   }
+   
+   @media screen and (max-width: 600px) {
+     .topnav a:not(:first-child) {display: none;}
+     .topnav a.icon {
+       float: right;
+       display: block;
+     }
+   }
+   
+   @media screen and (max-width: 600px) {
+     .topnav.responsive {position: relative;}
+     .topnav.responsive .icon {
+       position: absolute;
+       right: 0;
+       top: 0;
+     }
+     .topnav.responsive a {
+       float: none;
+       display: block;
+       text-align: left;
+     }
+   }
+/************************   estilo de hero section ******************/
+
+#hero {background-image: url("../imagenes/jugador2.jpeg");
+       background-size: cover;
+       background-position: 66%;
+       position:relative;
+       height:92vh;
+       }
+
+#hero h1 {position:absolute;
+          top:20px;
+          left:40px;
+          font-family: mili;
+          font-size: 2.5em;
+          letter-spacing:0.1em;
+          }
+
+#cta {position:absolute;
+      top:190px;
+      left:40px;
+      background-color:#495736;
+      padding:10px;
+      border-radius:20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8em;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+#cta:hover {background-color: #657D42;
+            box-shadow:3px 3px 3px rgb(68, 68, 68);}
+
+#hero a {color:black;}
+
+#hero .fa-arrow-up {position:fixed;
+              bottom:20px;
+              right:20px;
+              color:white;
+              font-size:1.5em;
+              border:2px solid white;
+              border-radius:50%;
+              padding:3px;}
+
+/****************  estilo de la introduction section ********************/
+
+#introduccion{color:white;
+              padding:10%;
+              font-family: texto;
+              font-size:1.5em;
+              text-align:justify;
+              border-bottom:3px solid #657D42;}
+
+#introduccion h1 {font-family: mili;
+                  margin-bottom:60px;
+                  text-align:center;}
+
+#introduccion p:first-letter{font-size:2em;
+                             color:#657D42;}
+
+#cda1 {width:50%;
+        float:left;
+        text-align: center;
+        margin:20px;
+        border:1px solid #657D42;
+        padding:2%;
+      }
+
+/**********  sección history a 2 columnas ******************/
+
+#campos {font-family: texto;
+          color:white;
+          padding:40px 0;
+          margin:50px 0;
+          border-bottom:3px solid #657D42;}
+
+#campos h1 {font-family:mili;
+             text-align: center;
+             font-size:2em;}
+
+#campos p {font-size:1.5em;}
+
+#campos p:first-letter{font-size:2em;
+     color:#657D42;}
+
+#galeria {font-family: texto;
+      color:white;
+      padding:40px 0;
+      margin:100px 0;
+      border-bottom:3px solid #657D42;}
+
+#galeria h1 {font-family:mili;
+         text-align: center;
+         font-size:2em;}
+
+#galeria p {font-size:1.5em;}
+
+#galeria p:first-letter{font-size:2em;
+ color:#657D42;}
+
+
+.mitad {width:50%;
+        float:left;
+        box-sizing:border-box;
+        }
+
+.fotocampo {border:1px solid #657D42;
+            padding:2%;
+            }
+
+.fotocampo h2 {text-align:center;}
+
+#izquierda {padding:2%;}
+
+
+#zeta1 {display:block;
+       margin:auto;
+       width:100%;
+        }
+.fin-float {clear:both;}
+
+/********** estilo de gallery *********************/
+
+#galeria h1 {font-family: mili;
+             color:white;
+             font-size:2em;
+             text-align:center;
+             padding-top:80px;}
+
+.cuartos {width:25%;
+          float:left;
+          box-sizing: border-box;
+          padding:2%;
+          border:1px solid #657D42;
+     }
+
+.cuartos img {width:100%;
+              opacity:0.5;
+              }
+
+.cuartos img:hover {opacity:1;}
+
+.cuartos h2 {color:white;
+             font-family:mili;
+             text-align:center;}
+
+/********** estilo de footer **********************/
+
+
+footer {background-color: #495736;
+        padding:40px 25%;
+        box-sizing:border-box;}
+
+footer img {width:20%;
+            float:left;
+            margin-right:2.5%;}
+
+footer hr {margin-top:30px;}
+
+footer .fa {
+  box-sizing:border-box;
+  padding: 20px;
+  font-size: 30px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+footer .fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#social { width:400px;
+          margin:auto;}
+
+/**********   media queries ************************/
+
+@media only screen and (max-width:1000px) {
+
+     .cuartos {width:50%;}
+     footer {padding:40px 10%;}
+     #social {width:200px;}
+}
+
+@media only screen and (max-width:500px){
+     #container {width:100%;}
+     .cuartos {width:90%;
+               margin:5%}
+     footer {padding: 40px 5%;}
+}
